@@ -13,6 +13,15 @@ class PlaySoundViewController: UIViewController {
 
      var recordedAudio : NSURL!
     
+    @IBOutlet weak var snailButton: UIButton!
+    @IBOutlet weak var rabbitButton: UIButton!
+    @IBOutlet weak var chipmunkButton: UIButton!
+    @IBOutlet weak var dartVaderButton: UIButton!
+    @IBOutlet weak var parrotButton: UIButton!
+    @IBOutlet weak var echoButton: UIButton!
+    
+    
+    
     var audioPlayer:AVAudioPlayer!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +40,10 @@ class PlaySoundViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func playSoundForButton(sender: UIButton) {
+        
     }
     
     @IBAction func playSlow(sender: UIButton) {
